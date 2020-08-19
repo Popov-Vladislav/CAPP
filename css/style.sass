@@ -1,0 +1,44 @@
+*
+    padding: 0px
+    margin: 0px
+    box-sizing: border-box
+
+.content
+    display: grid
+    min-height: 100vh
+    grid-template-columns: repeat(auto-fit, 200px)
+    grid-column-gap: 32px
+    grid-row-gap: 32px
+    justify-content: center
+    align-content: center
+
+.item
+    height: 250px
+    border: 1px solid #000
+
+.center
+  padding: 0 15px;
+
+
+@media (min-width: 575.98px)
+    .center 
+        padding: 0 calc(50% - 270px)
+
+
+@media (min-width: 767.98px)
+    .center 
+        padding: 0 calc(50% - 360px)
+    .item
+        background-color: black 
+
+
+@media (min-width: 991.98px) 
+    .center 
+        padding: 0 calc(50% - 480px)
+  
+
+
+@media (min-width: 1199.98px)
+    .center 
+        padding: 0 calc(50% - 590px)
+  
