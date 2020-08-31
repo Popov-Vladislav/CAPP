@@ -5,11 +5,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5a5318a547.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    Контент будет обновляться каждый вечер в интервале с 17:00 до 20:00.
+    <div class="top">
+        <header class="header center">
+            <input id="switcher" type="checkbox">
+            <label for="switcher" class="open-burger"><i class="fas fa-bars"></i></label>
+            <a href="#" class="header__logo"><img src="images/logo.png" alt="header__logo" class="header__logo"></a>
+            <div class="header__regions">
+                <p>Оформление допуска СРО в</p>
+                <select name="areas" id="areas" class="selected-region">
+                    <option value="Sverdlovsk_region">Свердловской области</option>
+                    <option value="Perm_region">Пермском крае</option>
+                    <option value="Khanty-Mansiysk-Ugra">Ханты-Мансийский АО</option>
+                    <option value="Yamalo-Nenetsk">Ямало-Ненецкий АО</option>
+                    <option value="Chelyabinsk_region">Челябинская область</option>
+                    <option value="Tyumen_region">Тюменская область</option>
+                </select>
+            </div>
+            <a href="tel:+79000491328" class="header__phone">8(900)-049-13-28</a>
+            <div class="header__contacts">
+                <div class="header__social-network df">
+                    <a href="#" class="box-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="box-telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                </div>
+                <button class="btn-consul dn">Консультация</button>
+                <div class="modal-window">
+                    <input id="modal-consul" type="checkbox">
+                    <label class="btn-consul" for="modal-consul">
+                        <span>Консультация</span>
+                    </label>
+                    <label class="modal-background" for="modal-consul"></label>
+                    <div class="modal-content">
+                        <label class="modal-close" for="modal-consul">&#10005;</label>
+                        <h2>Введите номер Вашего телефона</h2>
+                        <b>и менеджер ответит на Ваши вопросы</b>
+                        <input type="tel" class="modal-content-tel" placeholder="+7(__)___-__-__">
+                        <label class="modal-content-button" for="modal-consul"><b>Отправить</b></label>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-dn">
+                <input id="drop-contact-input" type="checkbox">
+                <label for="drop-contact-input"><i class="fas fa-phone-square-alt"></i></label>
+                <div class="header__drop-contacts dg">
+                    <a href="tel:+79000491328" class="header__phone_mobile">8(900)-049-13-28</a>
+                    <div class="header__social-network_mobile df">
+                        <a href="#" class="box-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="box-telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <nav class="nav">
+                <label for="switcher" class="close-burger"><i class="fas fa-times"></i></label>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="menu__link">Регионы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Цены</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__link">НРС</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="top__content center" style="padding-bottom: 16px;">
+            <div class="top__info">
+                <h1 class="top__heading">Вступление в надёжное СРО</h1>
+                <div class="top__advantage">
+                    <div class="top__advantage-box">
+                        <img src="images/adv1.png" alt="adv1">
+                        <p>
+                            Оформим допуск СРО <b>"под ключ" за 3 дня</b> с гарантией сроков и по фикированной цене!
+                        </p>
+                    </div>
+                    <div class="top__advantage-box">
+                        <img src="images/adv2.png" alt="adv2">
+                        <p>
+                            Сопровождаем вашу компанию на ВСЕХ этапах в подготовке документов для вступления в СРО по всей области!
+                        </p>
+                    </div>
+                    <div class="top__advantage-box">
+                        <img src="images/adv3.png" alt="adv3">
+                        <p>
+                            Даём рекомендации, либо исправляем несоответсвия Ваших специалистов требованиям НОСТРОЙ!
+                        </p>
+                    </div>
+                </div>
+                <h2 class="top__heading-h2">
+                    Узнайте стоимость вступления в СРО в вашем регионе
+                </h2>
+                <form action="#" class="top__form" id="top--form">
+                    <div name="top--form" class="top__form-fieldset-quest">
+                        <div class="top__label-box">
+                            <p class="top__form-p"><span>1</span><b>Выберите тип СРО:</b></p>
+                            <label for="builders">
+                            <input type="radio" name="SRO_type" id="builders" class="top__custom-radio-button">
+                            <div class="top__input-radio top__input-radio_first">СРО строителей</div> 
+                        </label>
+                            <label for="designers">
+                            <input type="radio" name="SRO_type" id="designers" class="top__custom-radio-button">
+                            <div class="top__input-radio">СРО проектировщиков</div> 
+                        </label>
+                            <label for="prospectors">
+                            <input type="radio" name="SRO_type" id="prospectors" class="top__custom-radio-button">
+                            <div class="top__input-radio">СРО изыскателей</div> 
+                        </label>
+                        </div>
+
+                        <div class="top__label-box">
+                            <p class="top__form-p"><span>2</span><b>Особые условия:</b></p>
+                            <label for="hazardous-work">
+                                <input type="radio" name="special conditions" id="hazardous-work" class="top__custom-radio-button">
+                                <div class="top__input-radio">Опасные работы</div> 
+                            </label>
+                            <label for="atomic-work">
+                                <input type="radio" name="special conditions" id="atomic-work" class="top__custom-radio-button">
+                                <div class="top__input-radio">Атомные работы</div> 
+                            </label>
+                            <label for="no-work">
+                                <input type="radio" name="special conditions" id="no-work" class="top__custom-radio-button">
+                                <div class="top__input-radio">Нет</div> 
+                            </label>
+                        </div>
+                        <div class="top__label-box-checkbox top__label-box">
+                            <p class="top__form-p"><span>3</span><b>Статус Вашего специалиста:</b></p>
+                            <label for="reg-in-NOS">
+                            <input type="checkbox" name="Num-Of-Spec" id="reg-in-NOS" class="top__custom-radio-button">
+                            <div class="top__input-checkbox top__input-checkbox_first">
+                                Регистрация специалиста в НОСТРОЙ/НОПРИЗ
+                            </div> 
+                        </label>
+                            <label for="select-spec">
+                            <input type="checkbox" name="Num-Of-Spec" id="select-spec" class="top__custom-radio-button">
+                            <div class="top__input-checkbox">
+                                Подбор специалиста для вступления в СРО
+                            </div> 
+                        </label>
+                            <label for="inadequate">
+                            <input type="checkbox" name="Num-Of-Spec" id="inadequate" class="top__custom-radio-button">
+                            <div class="top__input-checkbox">
+                                Регистрация специалиста не соответствующего требованиям НОСТРОЙ
+                            </div> 
+                        </label>
+                        </div>
+                        <!-- <p class="top__form-p"><b>Страхование ответственности:</b></p>
+                        <label for="insur-yes">
+                            <input type="radio" name="insurance" id="insur-yes" class="top__custom-radio-button">
+                            <div class="top__input-radio">Нужна страховка</div> 
+                        </label>
+                        <label for="insur-no">
+                            <input type="radio" name="insurance" id="insur-no" class="top__custom-radio-button">
+                            <div class="top__input-radio">Страховка уже есть</div> 
+                        </label> -->
+                    </div>
+                    <fieldset name="top--form" class="top__form-fieldset-cont">
+                        <h2 class="top__form-h2">Рассчитать стоимость</h2>
+                        <p class="top__form-cont-p">
+                            Cпециалист свяжется и проконсультирует по стоимости вступления в СРО по вашему случаю
+                        </p>
+                        <input type="text" name="name" class="top__form-cont-input" placeholder="Ваше имя" required>
+                        <input type="tel" name="tel" class="top__form-cont-input" placeholder="Ваш телефон" required>
+                        <label for="confidentiality" class="label-confidentiality">
+                            <input type="checkbox" name="confidentiality" id="confidentiality" required checked>
+                            <div class="top__input-form-cont-check">
+                                Я согласлен с политикой конфиденциальности
+                            </div>
+                        </label>
+                        <button type="submit" class="top__form-submit">Рассчитать</button>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+        <main class="main center">
+            <div class="main__four-steps">
+                <h3>СРО за 4 шага</h3>
+                <div class="main__steps">
+                    <div class="main__steps-number">1</div>
+                    <div class="main__steps-font main__steps-font_small">
+                        <h5>Отправка заявки</h5>
+                        <p>
+                            Наши специалисты изучют Вашу ситуацию, составляют базу документов.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__steps">
+                    <div class="main__steps-number ">2</div>
+                    <div class="main__steps-font main__steps-font_small">
+                        <h5>Подготовка документов</h5>
+                        <p>
+                            Мы готовим все требуемые документы и утверждаем их с Вами.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__steps">
+                    <div class="main__steps-number">3</div>
+                    <div class="main__steps-font">
+                        <h5>Оплата взносов СРО</h5>
+                        <p>
+                            Вы производите оплату вступительных взносов на счёт СРО при консултации наших специалистов.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__steps">
+                    <div class="main__steps-number">4</div>
+                    <div class="main__steps-font">
+                        <h5>Допуск СРО</h5>
+                        <p>
+                            Вы вступаете в СРО имея полный пакет документов под наблюдением наших сотрудников.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            Заглушка
+        </main>
+    </div>
 </body>
 
 </html>
